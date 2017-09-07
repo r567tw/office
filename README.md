@@ -5,3 +5,4 @@
 1. 藉由CSV 抓出 GOOGLE MAP 的截圖
 2. 身分證字號的驗證與檢查還有產生
 3. 網頁表單的自動化撰寫
+4. youtube 影片下載 tinker 簡易版 及讀取json 多個版
