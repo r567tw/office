@@ -9,6 +9,11 @@ allmd5s=dict()
 n=0
 
 
+target_dir = cur_path + '/' + output_dir
+
+if not os.path.exists(target_dir):
+    os.mkdir(target_dir)
+
 for dirname,subdir,files in sample_tree:
     allfiles=[]
     basename = os.path.basename(dirname)
@@ -18,9 +23,7 @@ for dirname,subdir,files in sample_tree:
 
     for file in files:
         ext=file.split('.')[-1]
-        if ext=='jpg' or ext=='png':
-            allfiles.append(dirname+"/"+file)
-    
+        
     if len(allfiles)>0:
         target_dir = dirname + '/' + output_dir
         if not os.path.exists(target_dir):
