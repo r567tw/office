@@ -8,5 +8,7 @@
 4. youtube_download youtube 影片下載
     - tinker 簡易版 
     - 讀取json 多個版
-5. file_manage 找出重複的圖片 刪除複製輸出
+5. file_manage 
+    - 找出重複的圖片 刪除複製輸出
+    - 找出符合副檔名的檔案，全部複製出來
 6. search_key_word 從多個文字檔找出關鍵字
