@@ -2,7 +2,7 @@
 > 開發簡單的辦公室辦公相關或一些雜七雜八的自動化任務工具，only for me，and also improve my python programming skill.
 
 1. goolge_map 
-> 藉由CSV 抓出 GOOGLE MAP 的截圖
+> 藉由CSV(第一欄 代號，第二欄地址或者名稱) 抓出 GOOGLE MAP 的截圖
 
 2. id_card_number 
 > 台灣身分證字號的驗證與檢查還有產生
