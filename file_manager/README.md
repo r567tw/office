@@ -5,5 +5,9 @@
 # 未封裝exe
 2.File-Extension-Filter.py
 > 找到重複的檔案並且刪除
+
 3.File-imageRepeatRemove.py
 > 找到重複的圖片並且刪除、將未重複的檔案複製過去
+
+4.File-Rename.py
+> 根據CSV 檔(第一欄為原檔名,第二欄為新檔名-無須加註欄位名稱)，即可將檔案名稱批次更改並複製到指定的資料夾，而資料夾裡會有result.txt 和 error.txt 分別記錄處理成功與處理失敗的細節
