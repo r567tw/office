@@ -29,3 +29,7 @@
 8. json (尚未開發，預計撰寫)
 > formater : 想要觀看
 > editro : 做json 的編輯
+
+9. action_auto
+> 利用pyautogui 自動化我們操作電腦的動作
+> <br/>autoclick：　連點器
