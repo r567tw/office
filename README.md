@@ -33,3 +33,6 @@
 9. action_auto
 > 利用pyautogui 自動化我們操作電腦的動作
 > <br/>autoclick：　連點器
+
+10. pattern_matching
+> 幫助兩個檔案協尋符合正規表達式的規格pattern。從而求出其中差集、交集、並集...等
