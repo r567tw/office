@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*
 #一個驗證是否為身分證字號的py 或者 產生某個數字的身分證字號
 
 import sys,re,string,random
