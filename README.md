@@ -26,9 +26,10 @@
 7. mysql_cmd 
 > 連接mysql 輸出資料
 
-8. json (尚未開發，預計撰寫)
+8. json 
 > formater : 想要觀看
-> editro : 做json 的編輯
+> editor : 做json 的編輯
+> 以撰寫非常simple 的模樣～
 
 9. action_auto
 > 利用pyautogui 自動化我們操作電腦的動作
