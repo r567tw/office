@@ -1,4 +1,5 @@
 mysql_cmd/*.txt
+.env_office/*
 **/*/__pycache__/*
 **/*/build/*
 **/*/dist/*

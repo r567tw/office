@@ -4,6 +4,8 @@
 ## Before use these tools:
 ```
 {For mac}
+virtualenv .env_office
+
 source .env_office/bin/activate
 //啟動office python的虛擬環境，確保自己可以使用的packages...
 
