@@ -1,0 +1,3 @@
+[console_scripts]
+twstock=twstock.cli:run
+

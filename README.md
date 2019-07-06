@@ -1,6 +1,17 @@
 # office
-> 開發簡單的辦公室辦公相關或一些雜七雜八的自動化任務工具，only for me，and also improve my python programming skill.
+> 開發簡單的辦公室辦公相關或一些雜七雜八的自動化任務工具
 
+## Before use these tools:
+```
+{For mac}
+source .env_office/bin/activate
+//啟動office python的虛擬環境，確保自己可以使用的packages...
+
+deactivate
+// 離開虛擬環境
+```
+
+## Indexs
 1. goolge_map 
 > 藉由CSV(第一欄 代號，第二欄地址或者名稱) 抓出 GOOGLE MAP 的截圖
 
@@ -10,7 +21,8 @@
 3. web_auto 
 > 網頁表單的自動化撰寫
 
-4. youtube_download youtube 影片下載
+4. youtube_download 
+> youtube 影片下載
 >   - tinker 簡易版 
 >   - 讀取json 多個版
 
@@ -37,3 +49,13 @@
 
 10. pattern_matching
 > 幫助兩個檔案協尋符合正規表達式的規格pattern。從而求出其中差集、交集、並集...等
+
+11. auto_modify
+```
+自動幫我可以自動化一連串的動作，並依照我要的template 產生我想要的程式碼。
+```
+
+12. line_stock
+```
+根據python 技術者這本書，寫一個line bot 可以盯盤股票的程式。
+```
