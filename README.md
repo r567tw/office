@@ -66,3 +66,8 @@ deactivate
 ```
 練習多執行緒議題，還不是搞得很清楚～
 ```
+
+14. httpd_related
+```
+工作用常常會修改httpd 相關設定與apache 重開等工作，使用python 寫script 自動化！
+```
