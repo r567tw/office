@@ -1,5 +1,9 @@
 mysql_cmd/*.txt
-.env_office/*
+.env_office/bin
+.env_office/include
+.env_office/lib
+.env_office/.Python
+.env_office/*.json
 **/*/__pycache__/*
 **/*/build/*
 **/*/dist/*

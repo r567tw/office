@@ -11,6 +11,9 @@ virtualenv .env_office
 source .env_office/bin/activate
 //啟動office python的虛擬環境，確保自己可以使用的packages...
 
+pip install -r .env_office/requirements.txt
+//安裝一下需要使用的套件
+
 deactivate
 // 離開虛擬環境
 ```

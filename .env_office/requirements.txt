@@ -1,0 +1,12 @@
+attrs==17.4.0
+certifi==2018.10.15
+chardet==3.0.4
+idna==2.6
+incremental==17.5.0
+pluggy==0.6.0
+py==1.5.2
+pytest==3.3.1
+requests==2.18.4
+six==1.11.0
+urllib3==1.22
+virtualenv==15.1.0
