@@ -94,3 +94,14 @@ deactivate
 ```
 工作用常常會修改httpd 相關設定與apache 重開等工作，使用python 寫script 自動化！
 ```
+
+# Other
+
+目前 pytube 9.5.1 有些問題
+可以參考以下[連結](https://www.flag.com.tw/bk/t/ft700)
+如果使用.env_office 可至
+
+```
+.env_office/lib/python3.6/site-packages/pytube/__main__.py
+.env_office/lib/python3.6/site-packages/pytube/streams.py
+```
