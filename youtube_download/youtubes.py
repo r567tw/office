@@ -6,27 +6,24 @@ from pytube import YouTube
 
 
 def clickUrl():
-    with open('youtube.json', 'r') as reader:
+    with open("youtube.json", "r") as reader:
         jf = json.loads(reader.read())
-        data = jf['urls']
+        data = jf["urls"]
         for url in data:
             print(url)
             try:
-                yt = YouTube()
-                yt.url = url
-                video = yt.get("mp4", "360p")
-                video.download('./youtube/')
+                video = YouTube(url).streams.first().download("./youtube")
                 labelMsg.config(text="下載完成")
             except:
                 labelMsg.config(text="出現了一些錯誤")
 
 
-dname = 'youtube'
-if (not os.path.exists(dname)):
+dname = "youtube"
+if not os.path.exists(dname):
     os.mkdir(dname)
 win = tk.Tk()
 win.geometry("450x320")
-win.title('下載許多Youtube影片')
+win.title("下載許多Youtube影片")
 url = tk.StringVar()
 frame1 = tk.Frame(win, width=450)
 frame1.pack()
