@@ -65,7 +65,7 @@ deactivate
    > 利用 pyautogui 自動化我們操作電腦的動作
    > <br/>autoclick：　連點器
    > <br/>autoinputNumber: 幫我輸入從開始到結束後的數字並且每次輸入完按下我指定的按鍵
-   > <br/>autoinputNumber: 幫我輸入每次一樣的內容並且每次輸入完按下我指定的按鍵
+   > <br/>autoinputType: 幫我輸入每次一樣的內容並且每次輸入完按下我指定的按鍵
 
 10. pattern_matching
 
