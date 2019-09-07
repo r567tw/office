@@ -98,6 +98,12 @@ deactivate
 工作用常常會修改httpd 相關設定與apache 重開等工作，使用python 寫script 自動化！
 ```
 
+15. bitcoins
+
+```
+玩玩關於比特幣歷史價格趨勢、MA線、學習pandas以及matplotlib 畫圖。
+```
+
 # Other
 
 目前 pytube 9.5.1 有些問題
