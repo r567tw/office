@@ -104,6 +104,12 @@ deactivate
 玩玩關於比特幣歷史價格趨勢、MA線、學習pandas以及matplotlib 畫圖。
 ```
 
+16. openCV
+
+```
+玩一玩openCV 圖片處理，順便弄個灰階、調整大小的處理程式，順便玩玩圖像辨識。___capture.py 並未完成，似乎儲存之後出現一些狀況
+```
+
 # Other
 
 目前 pytube 9.5.1 有些問題
