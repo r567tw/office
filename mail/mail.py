@@ -6,7 +6,7 @@ try:
     smtp_gmail = smtplib.SMTP("smtp.gmail.com", 587)
     smtp_gmail.ehlo()
     smtp_gmail.starttls()
-    smtp_gmail.login("logicsolutionjimmy", "qwert231")
+    smtp_gmail.login("account", "password")
 except:
     print("connect ERROR")
     exit()
