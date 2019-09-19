@@ -1,4 +1,48 @@
-iT邦幫忙鐵人賽是專為IT人舉辦的年度盛事，每年都有數百位IT人一起參與挑戰，大家一起分享技術、經驗與熱情。
-隨著iT邦幫忙鐵人在今年邁入第7年，已經有將近千位IT鐵人達成了連續30天發文不中斷的自我挑戰，為IT職涯寫下難忘的記錄。
-iT邦幫忙鐵人賽是IT人自我成長的絕佳機會。參加過鐵人賽的IT人都說：藉由連續30天、每天發表一篇文章來強迫自己，把過去一年學到的知識與經驗給整理出來，跟大家分享交流，收獲最多的絕對是自己。
-而且，還有最3萬元的高額獎金及數不完的獎品等著你。
+參賽前言、讀前基礎、環境預備
+參賽前言
+說真的，這裡真的不知道該寫些什麼，我也不知道我能不能像上次一樣寫滿 30 天，總之這次努力看看。
+
+選擇一個自己最為擅長的語言：PHP，一個被所有工程師鄙視的語言 哼，Laravel 的來到，無非是為這個已經被酸民酸到不行的語言注入一股強大的力量。
+
+看遍一些 Laravel 的書籍之後，我覺得那些書籍都寫得過於簡單，舉例來說，很多書籍都沒有講到 Laravel 附帶的 phpunit 測試、還有 Laravel 與 websocket\或者他可以與哪些 package 搭配會更加強大？或者 API、Redis、middleware、notification 怎麼用之類的。
+
+希望我這個教學會是 Laravel 最詳盡的教學，也期許自己能把它寫完，順便探索與整理我的 Laravel 技能。 PS. 原本我是想寫一些存檔在加入的，殊不知想著想著都已經 9/16 啦，完蛋啦，變成「時間驅動寫作」了哈哈哈
+
+讀前基礎
+希望你有些 php 和網頁的基礎，至少知道 php 的物件導向是該怎麼寫怎麼運作的。雖然我會盡量寫的平易近人一點，但有些過於基本的難免會直接簡單帶過去，不過如果你有任何問題，歡迎在底下留言詢問，我會竭盡所能地回答啦
+
+環境預備
+首先我們先來到官網，不得不說，英文對技術人真的有點重要（雖然作者我的英文還是很破），但有 google 翻譯以及一些英文的 sense 還是看得懂 Laravel 的文件啦，不得不說 Laravel 是我史上看過最棒的文件了～ https://laravel.com/docs/6.x/installation
+
+首先在安裝的部分他有說到了你要安裝一下 composer，假設你安裝好了 composer 之後 你使用composer --version 這個指令就會看到有版本號
+
+$ composer --version
+Composer version 1.6.3
+因為篇幅的關係，如果你發現下指令之後的結果沒有像上述一樣請自行 stackoverflow 或者 google 一下，也可以在底下留言啦，但要附上一些操作步驟和資訊，我還沒有練就通靈的能力喔哈哈哈
+
+然後請用 composer 安裝一下 laravel 方便的安裝套件，使用底下的指令（我想文件已經告訴你們了）
+
+composer global require laravel/installer
+然後之後用
+
+laravel new blog
+如果之後你發現 Laravel 不是你可以使用的指令，那就請你把它加入你可以用的環境變數 Mac 請服用：https://stackoverflow.com/questions/26376516/laravel-php-command-not-found
+
+Windows 請服用：https://stackoverflow.com/questions/34311668/laravel-command-not-found-while-using-laravel-command
+
+然後呢！ 然後他就死掉了 就有一個blog資料夾了喔～
+
+或者如果你不想安裝這個東西也沒關係，只是以後你創建會比較麻煩一點，要打底下落落長的指令
+
+composer create-project --prefer-dist laravel/laravel blog
+忘了說，你的環境可以先安裝好 apache/nginx 還有 mysql，你可以使用 LARAVEL 台灣社群做的wagon ，也可以用 XAMPP 或者 Mamp 這種懶人包，也可以用 docker 或者 laravel 的 homestead (使用 homestead 可以參考：https://laravel.com/docs/6.x/homestead)，如果功力強大的，可以直接裝 apache/nginx、mysql/mariadb 直接做一個環境起來
+
+PS. Docker 的部分你可以參考https://laradock.io/ PS. 使用 docker 也可以參考中文網站在這裡：https://medium.com/@yfancc20/laradock-%E8%BC%95%E9%87%8F-laravel-%E7%92%B0%E5%A2%83%E7%9A%84%E5%98%97%E8%A9%A6-%E5%B8%B8%E8%A6%8B%E9%8C%AF%E8%AA%A4-2fc6f0c21433
+
+我是不資深不專業果迷，最近有點想買 iphone 11，所以我是使用 mac 專用的 valet 在本機啟動的我 laravel 專案開發啦。
+
+然後你至於開發你要使用 VS-Code 還是 subl 還是 atom 都可以啦，你也可以使用 vim 或記事本或者 notepad+ 開發也無所謂，這裡我就不歸票了，但我支持使用 vs-code 啦
+
+總之你把目錄指向 laravel 的 public 資料夾底下的 index.php 看到這畫面，就 ok 囉！
+
+接下來，讓我們一起深入 laravel 的世界，讓 php 在此偉大吧！ （如果你是使用 valet 或 homestead 或 docker 的方式你可以不用管這個指向 public 的 index.php 的步驟喔......）
