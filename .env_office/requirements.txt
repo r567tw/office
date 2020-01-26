@@ -135,7 +135,7 @@ python-docx==0.8.10
 pytube==9.5.1
 PyTweening==1.0.3
 pytz==2019.2
-requests==2.18.4
+requests==2.20.0
 selenium==3.141.0
 six==1.11.0
 soupsieve==1.9.3
