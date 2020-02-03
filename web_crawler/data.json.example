@@ -1,0 +1,8 @@
+{
+    "data": [
+        {
+            "url": "輸入你要的URL",
+            "select": "選擇你要抓取的資料HTML Class/ID"
+        }
+    ]
+}

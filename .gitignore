@@ -1,4 +1,6 @@
 mysql_cmd/*.txt
+web_crawler/*.txt
+web_crawler/data.json
 .env_office/bin
 .env_office/include
 .env_office/lib
