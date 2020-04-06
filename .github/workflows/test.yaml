@@ -2,7 +2,7 @@ name: test
 
 on:
   schedule:
-  - cron: */30 1-3 * * *
+  - cron: 0/5 * * * *
 
 jobs:
   build:
@@ -25,5 +25,5 @@ jobs:
       #   USERNAME: ${{ secrets.USERNAME }}
       #   PASSWORD: ${{ secrets.PASSWORD }}
       run: |-
-        cd line_stock
+        cd line_stock/
         python line_stock.py
