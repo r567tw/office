@@ -16,7 +16,6 @@ jobs:
         python-version: '3.7'
     - name: Install dependencies
       run: |-
-        cd line_stock
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: execute
@@ -25,4 +24,5 @@ jobs:
       #   USERNAME: ${{ secrets.USERNAME }}
       #   PASSWORD: ${{ secrets.PASSWORD }}
       run:
+        cd line_stock/
         python line_stock.py
