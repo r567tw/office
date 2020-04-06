@@ -1,5 +1,7 @@
 # office
 
+![.github/workflows/test.yaml](https://github.com/r567tw/office/workflows/.github/workflows/test.yaml/badge.svg)
+
 > 開發簡單的辦公室辦公相關或一些雜七雜八的自動化任務工具
 
 ## Before use these tools:
