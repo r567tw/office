@@ -74,4 +74,3 @@ for stock in stocks:
     send_ifttt(name, price, message)
     print("請等個10秒鐘，不然這支程式會被證交所ban掉嗚嗚嗚！")
     time.sleep(10)
-
