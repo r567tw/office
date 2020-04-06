@@ -1,6 +1,9 @@
 name: test
 
 on:
+  push:
+    branch:
+    - master
   schedule:
   - cron: 0/5 * * * *
 
@@ -16,6 +19,7 @@ jobs:
         python-version: '3.7'
     - name: Install dependencies
       run: |-
+        cd line_stock/
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: execute
@@ -25,4 +29,4 @@ jobs:
       #   PASSWORD: ${{ secrets.PASSWORD }}
       run:
         cd line_stock/
-        python line_stock.py
+        python line_stock/line_stock.py
