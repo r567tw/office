@@ -23,6 +23,23 @@ deactivate
 // 離開虛擬環境
 ```
 
+```
+{For windows}
+virtualenv .env_office
+
+.env_office\Scripts\activate.bat
+//啟動office python的虛擬環境，確保自己可以使用的packages...
+
+pip freeze > .env_office/requirements.txt
+//將目前的module 輸出到 .env_office/requirements.txt 這個檔案當中。
+
+pip install -r .env_office/requirements.txt
+//安裝一下需要使用的套件
+
+deactivate
+// 離開虛擬環境
+```
+
 ## Indexs
 
 1. goolge_map
