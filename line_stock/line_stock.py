@@ -33,16 +33,20 @@ def get_price(stockid):
 
 # 是否符合四大買賣點
 def get_four_best(stockid):
-    stock = twstock.Stock(stockid)
-    best = twstock.BestFourPoint(stock).best_four_point()
-    if best:
-        if best[0]:
-            info = "買進: "
+    try:
+        stock = twstock.Stock(stockid)
+        best = twstock.BestFourPoint(stock).best_four_point()
+        if best:
+            if best[0]:
+                info = "買進: "
+            else:
+                info = "賣出: "
+            return (info, best[1])
         else:
-            info = "賣出: "
-        return (info, best[1])
-    else:
-        return (False, False)
+            return (False, False)
+     except Error:
+         send_ifttt(stockid, "0.0", "程式出現錯誤")
+         print(Error)
 
 
 def send_ifttt(v1, v2, v3):
