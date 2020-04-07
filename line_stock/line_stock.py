@@ -44,7 +44,7 @@ def get_four_best(stockid):
             return (info, best[1])
         else:
             return (False, False)
-     except Error:
+    except Error:
          send_ifttt(stockid, "0.0", "程式出現錯誤")
          print(Error)
 
