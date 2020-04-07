@@ -1,6 +1,6 @@
 # office
 
-![test](https://github.com/r567tw/office/workflows/test/badge.svg?branch=master)
+![LineStock](https://github.com/r567tw/office/workflows/LineStock/badge.svg)
 
 > 開發簡單的辦公室辦公相關或一些雜七雜八的自動化任務工具
 
