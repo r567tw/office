@@ -86,5 +86,5 @@ for stock in stocks:
         time.sleep(15)
     except Error:
         print("程式出現錯誤")
-        send_ifttt("未知", "0.0", "程式出現錯誤")
+        send_ifttt(id, "0.0", "程式出現錯誤")
         print(Error)
