@@ -34,6 +34,8 @@ def get_price(stockid):
 # 是否符合四大買賣點
 def get_four_best(stockid):
     try:
+        print("等個5秒鐘~泡杯咖啡")
+        time.sleep(5)
         stock = twstock.Stock(stockid)
         best = twstock.BestFourPoint(stock).best_four_point()
         if best:
