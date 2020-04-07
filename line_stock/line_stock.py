@@ -68,18 +68,23 @@ for stock in stocks:
     id, low, high = stock
     name, price = get_price(id)
     message = ""
-    if(name == False and price == False):
-        message += "股票代號{}資料擷取錯誤".format(id)
-        send_ifttt(name, price, message)
-    else:
-        if price < low:
-            message += "買進(股票低於自己設定的" + str(low) + "元) \n"
-        elif price > high:
-            message += "賣出(股票高於自己設定的" + str(high) + "元) \n"
+    try:
+        if(name == False and price == False):
+            message += "股票代號{}資料擷取錯誤".format(id)
+            send_ifttt(name, price, message)
         else:
-            message += "不操作\n"
-        act, why = get_four_best(id)
-        message += "\n[四大買賣點判斷]" + act + why
-        send_ifttt(name, price, message)
-    print("請等個15秒鐘，不然這支程式會被證交所ban掉嗚嗚嗚！")
-    time.sleep(15)
+            if price < low:
+                message += "買進(股票低於自己設定的" + str(low) + "元) \n"
+            elif price > high:
+                message += "賣出(股票高於自己設定的" + str(high) + "元) \n"
+            else:
+                message += "不操作\n"
+            act, why = get_four_best(id)
+            message += "\n[四大買賣點判斷]" + act + why
+            send_ifttt(name, price, message)
+        print("請等個15秒鐘，不然這支程式會被證交所ban掉嗚嗚嗚！")
+        time.sleep(15)
+    except Error:
+        print("程式出現錯誤")
+        send_ifttt("未知", "0.0", "程式出現錯誤")
+        print(Error)
