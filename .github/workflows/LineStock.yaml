@@ -1,32 +1,32 @@
-name: LineStock
+# name: LineStock
 
-on:
-  # push:
-  #   branches: 
-  #     - master
-  schedule:
-  - cron: 0/30 1-12 * * *
+# on:
+#   # push:
+#   #   branches: 
+#   #     - master
+#   schedule:
+#   - cron: 0/30 1-12 * * *
 
-jobs:
-  build:
-    name: Set up environment
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: Set up Python 3.7
-      uses: actions/setup-python@v1
-      with:
-        python-version: '3.7'
-    - name: Install dependencies
-      run: |-
-        cd line_stock
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-    - name: execute
-      # env:
-      #   # 取得在 Secrets 所設定的加密變數
-      #   USERNAME: ${{ secrets.USERNAME }}
-      #   PASSWORD: ${{ secrets.PASSWORD }}
-      run: |-
-        cd line_stock/
-        python line_stock.py
+# jobs:
+#   build:
+#     name: Set up environment
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v1
+#     - name: Set up Python 3.7
+#       uses: actions/setup-python@v1
+#       with:
+#         python-version: '3.7'
+#     - name: Install dependencies
+#       run: |-
+#         cd line_stock
+#         python -m pip install --upgrade pip
+#         pip install -r requirements.txt
+#     - name: execute
+#       # env:
+#       #   # 取得在 Secrets 所設定的加密變數
+#       #   USERNAME: ${{ secrets.USERNAME }}
+#       #   PASSWORD: ${{ secrets.PASSWORD }}
+#       run: |-
+#         cd line_stock/
+#         python line_stock.py
