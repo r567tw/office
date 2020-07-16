@@ -1,0 +1,3 @@
+.env
+audio/*.mp3
+result/media/in/*/**.mp3
