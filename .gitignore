@@ -17,3 +17,5 @@ talking/*.mp3
 **/*/.DS_Store
 */.DS_Store
 .DS_Store
+mysql_cmd/.env
+auto_requests/result.txt
