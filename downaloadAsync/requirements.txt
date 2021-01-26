@@ -1,0 +1,13 @@
+aiohttp==3.7.3
+appdirs==1.4.4
+async-timeout==3.0.1
+attrs==20.3.0
+chardet==3.0.4
+distlib==0.3.1
+filelock==3.0.12
+idna==3.1
+multidict==5.1.0
+six==1.15.0
+typing-extensions==3.7.4.3
+virtualenv==20.4.0
+yarl==1.6.3
