@@ -3,13 +3,6 @@ web_crawler/*.txt
 web_crawler/data.json
 itHomeToTechBlog/data.json
 talking/*.mp3
-.env_office/bin
-.env_office/Scripts
-.env_office/pyvenv.cfg
-.env_office/include
-.env_office/lib
-.env_office/.Python
-.env_office/*.json
 **/*/__pycache__/*
 **/*/build/*
 **/*/dist/*
@@ -19,4 +12,3 @@ talking/*.mp3
 .DS_Store
 mysql_cmd/.env
 auto_requests/result.txt
-123
